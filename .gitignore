@@ -259,3 +259,15 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/UnityPackageManager
+/Temp
+/Protótipo0.0.1.sln
+/Protótipo0.0.1.csproj
+/ProjectSettings
+/Library
+/Assets/Terrain
+/Assets/Scenes/GameScene.unity
+/Assets/Scenes
+/Assets/Player.prefab
+/Assets/Objects/PlayerMat.mat
+/Assets/Objects
