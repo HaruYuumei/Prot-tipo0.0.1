@@ -6,7 +6,7 @@ public class MovimentaçãoPlayer : MonoBehaviour {
 
     Rigidbody rb;
 
-
+    //teste
     [SerializeField]
     float Speed;
     [SerializeField]
