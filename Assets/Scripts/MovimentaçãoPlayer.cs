@@ -80,6 +80,7 @@ public class MovimentaçãoPlayer : MonoBehaviour {
         {
             Debug.Log("Pulou!"); 
         }
+        //testando
 
     }
 }
