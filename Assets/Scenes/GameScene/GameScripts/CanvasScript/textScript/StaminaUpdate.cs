@@ -32,7 +32,7 @@ public class StaminaUpdate : MonoBehaviour {
         }
         else
         {
-            Status.Stamina += 0.3f * Time.deltaTime;
+            Status.Stamina += 0.8f * Time.deltaTime;
         }
         UpdateStamina.text = "Stamina: " + Mathf.Round(Status.Stamina);
 

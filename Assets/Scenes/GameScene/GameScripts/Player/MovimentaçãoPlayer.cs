@@ -6,6 +6,9 @@ public class MovimentaçãoPlayer : MonoBehaviour {
 
     Rigidbody rb;
 
+    GameObject Jogador;
+    Playerstatus StatusDoJogador;
+
     //testando
     [SerializeField]
     float Speed;
@@ -22,6 +25,11 @@ public class MovimentaçãoPlayer : MonoBehaviour {
         //rigidbody
         rb = GetComponent<Rigidbody>();
 
+        //dizendo quem é o jogador
+        Jogador = GameObject.Find("Player");
+
+        //pegando o playerstatus
+        StatusDoJogador = Jogador.GetComponent<Playerstatus>();
 
 
         //variaveis//
@@ -65,18 +73,18 @@ public class MovimentaçãoPlayer : MonoBehaviour {
             rb.transform.Rotate(Vector3.left * (Time.deltaTime * RotationSpeed));
         }
 
-        //correndo
-        if(Input.GetKey(KeyCode.LeftShift))
+        //Somente Correr se a Stamina for maior q 0
+        if (Input.GetKey(KeyCode.LeftShift) && StatusDoJogador.Stamina > Mathf.Round(0))
         {
             Speed = RunningSpeed;
         }
-
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else
         {
             Speed = 10.0f;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Pulou!"); 
         }
