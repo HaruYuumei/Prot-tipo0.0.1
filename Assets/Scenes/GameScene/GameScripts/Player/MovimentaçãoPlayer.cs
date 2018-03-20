@@ -89,6 +89,7 @@ public class MovimentaçãoPlayer : MonoBehaviour {
             Debug.Log("Pulou!"); 
         }
         //testando
+        //Pq nao ta funfando o import do collab??
 
     }
 }
